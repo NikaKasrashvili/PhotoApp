@@ -10,6 +10,7 @@
             <p class="card-text">{{item.descriptions}}</p>
           </div>
           <button (click)="onDelete(item.photoId)" type="button" class="btn btn-danger">Delete</button>
+          <a [routerLink]="'details/'+item.photoId" type="button" class="btn btn-success">View On Full Screen</a>
         </div>
       </div>
     </div>

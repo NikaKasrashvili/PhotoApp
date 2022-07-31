@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InsertPhotoComponent } from '../upload-photo/insert-photo/insert-photo.component';
+import { PhotoDetailsComponent } from './photo-details/photo-details.component';
 import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
   {path: "", component: PhotosComponent},
+  {path: "details/:id", component: PhotoDetailsComponent},
 ];
 
 @NgModule({

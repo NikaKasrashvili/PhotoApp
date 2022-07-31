@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 
 import { PhotoBlogRoutingModule } from './photo-blog-routing.module';
 import { PhotosComponent } from './photos/photos.component';
+import { PhotoDetailsComponent } from './photo-details/photo-details.component';
 
 
 @NgModule({
   declarations: [
-    PhotosComponent
+    PhotosComponent,
+    PhotoDetailsComponent
   ],
   imports: [
     CommonModule,

@@ -22,4 +22,8 @@ export class ConnectToDataService {
   deletePhoto(id: number){ 
     return this.http.delete(`https://localhost:7139/api/photos/deletePhoto/${id}`);
   }
+
+  getPhotoById(id: number){ 
+    return this.http.get<Photo>(`https://localhost:7139/api/photos/getPhotoById/${id}`);
+  }
 }
