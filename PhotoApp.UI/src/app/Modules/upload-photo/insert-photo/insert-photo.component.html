@@ -1,0 +1,30 @@
+<div class="col" id="mainDiv">
+  <form [formGroup]="photoForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+      <label for="formFile" class="form-label">Upload An Image</label>
+      <input class="form-control" type="file" id="formFile" (change)="onChange($event)" >
+    </div>
+    <div *ngIf="image" style="text-align:center;">
+      <img [src]="image" width="200px" height="200px" class="img-thumbnail center" alt="..."  >
+    </div>
+
+    <div class="col-auto">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" formControlName="title">
+    </div>
+    <div class="col-auto">
+      <label for="author" class="form-label">Author</label>
+      <input type="text" class="form-control" id="title" formControlName="author" >
+    </div>
+    <div class="col-auto">
+      <label for="exampleFormControlTextarea1" class="form-label"> Description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="descriptions"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="photoForm.invalid || !image">Upload</button>
+  </form>
+</div>
+
+
+
+

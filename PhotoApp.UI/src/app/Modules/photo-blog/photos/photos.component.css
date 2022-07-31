@@ -1,0 +1,18 @@
+.card { 
+  height: 550px;
+
+  /* display: grid; */
+  grid-template-rows: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+
+  /* overflow: hidden; */
+}
+
+
+
+.card > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
